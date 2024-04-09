@@ -95,6 +95,7 @@ input.checkInputs = (event) => {
 requestAnimationFrame(update)
 function calculate(money, interest, steps) {
     var simulate = money
+    log("equation", `${money} x (1 + ${interest*100} ÷ 100)**${steps}`)
     log(steps + " steps starting at " + simulate + " with " + interest*100+ "% interest")
     for (let i = 0; i < steps; i++) {
         simulate += simulate*interest
