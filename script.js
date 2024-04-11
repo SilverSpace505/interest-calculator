@@ -103,4 +103,5 @@ function calculate(money, interest, steps) {
     }
 
     log("calculated", money*(interest+1)**steps)
+    log("\n")
 }
